@@ -28,7 +28,8 @@ A organização segue uma abordagem modular e intuitiva:
 ```text
 .
 ├── exercicios/          # Treinamentos práticos organizados por temas
-│   └── 01_pandas_sqlite/ # Manipulação de CSV e integração com SQLite
+│   ├── 01_pandas_sqlite/ # Manipulação de CSV e integração com SQLite
+│   └── 02_numpy_matplotlib/ # Simulação de dados e visualização gráfica
 ├── notebooks/           # Jupyter Notebooks para exploração e prototipagem
 ├── main.py              # Ponto de entrada principal (opcional)
 ├── pyproject.toml       # Definições de dependências e metadados (UV)
@@ -71,6 +72,12 @@ Para rodar o script de um exercício específico de forma isolada:
 
 ```bash
 uv run exercicios/01_pandas_sqlite/main.py
+```
+
+Para rodar o Exercício 02 (Visualização):
+
+```bash
+uv run exercicios/02_numpy_matplotlib/main.py
 ```
 
 ### 4. Abrindo o Jupyter Lab

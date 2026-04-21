@@ -10,5 +10,7 @@ wheels/
 .venv
 .DS_Store
 
-# Databases
+# Data and Generated Outputs
 data/*.db
+data/*.png
+data/*.pdf
