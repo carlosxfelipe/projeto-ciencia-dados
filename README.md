@@ -13,6 +13,7 @@ Este repositório é dedicado ao treinamento e desenvolvimento de habilidades em
 O projeto utiliza o que há de mais moderno no ecossistema de dados:
 
 -   **[Pandas](https://pandas.pydata.org/)**: Manipulação e análise de dados de alta performance.
+-   **[NumPy](https://numpy.org/)**: Processamento de arrays multidimensionais e funções matemáticas de alto nível.
 -   **[Scikit-Learn](https://scikit-learn.org/)**: Ferramentas simples e eficientes para análise preditiva de dados.
 -   **[SQLAlchemy](https://www.sqlalchemy.org/)**: O Toolkit SQL para Python e Object Relational Mapper.
 -   **[Matplotlib](https://matplotlib.org/)** & **[Seaborn](https://seaborn.pydata.org/)**: Visualização de dados estática, animada e interativa.
@@ -78,6 +79,30 @@ Para exploração visual nos arquivos do diretório `notebooks`:
 
 ```bash
 uv run jupyter lab
+```
+
+---
+
+## Gerenciamento de Pacotes
+
+Se você precisar adicionar ou remover bibliotecas no projeto, o `uv` torna isso muito simples e seguro. **Evite usar o `pip` diretamente.**
+
+### Adicionar uma nova biblioteca
+Para instalar um novo pacote (ex: `marimo`):
+```bash
+uv add marimo
+```
+
+### Remover uma biblioteca
+Para desinstalar um pacote existente:
+```bash
+uv remove marimo
+```
+
+### Sincronizar o ambiente
+Caso você baixe atualizações do repositório, garanta que seu ambiente local está correto com:
+```bash
+uv sync
 ```
 
 ---
