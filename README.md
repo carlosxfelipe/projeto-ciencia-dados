@@ -114,6 +114,28 @@ uv sync
 
 ---
 
+## Iniciando um Novo Projeto
+
+Caso você queira começar um novo projeto do zero utilizando o `uv`, siga estes passos simples:
+
+1. **Inicializar o projeto**:
+   ```bash
+   uv init meu_projeto --python 3.12
+   ```
+
+2. **Entrar na pasta**:
+   ```bash
+   cd meu_projeto
+   ```
+
+3. **Adicionar pacotes**:
+   Substitua `...` pelo nome da biblioteca que deseja instalar (ex: `pandas`, `numpy`, `matplotlib`):
+   ```bash
+   uv add ...
+   ```
+
+---
+
 ## Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
